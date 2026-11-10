@@ -3,7 +3,8 @@ import { portfolioData } from "../../data/portfolio";
 export default function ProjectsContent() {
     return(
         <>
-            <div className="flex flex-col pt-[5px] gap-2 overflow-y-auto">
+
+            <div className="flex flex-col pt-[5px] gap-2">
                 {portfolioData.projects.map((project) => (
                     <a
                         key={project.id}

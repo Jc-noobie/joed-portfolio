@@ -49,7 +49,7 @@ export default function Window({ title, z, isTop, onClose, onFocus, constraintsR
         onPointerDown={(event) => {
           if (isDesktop) dragControls.start(event)
         }}
-        className="sticky top-0 z-10 flex justify-between items-center px-3 py-2 border-b-2 border-white bg-[#535FAB]/95 text-white text-xs cursor-grab active:cursor-grabbing lg:bg-transparent"
+        className="sticky top-0 z-10 flex justify-between items-center px-3 py-2 border-b-2 border-white bg-[#535FAB]/95 backdrop-blur-sm text-white text-xs cursor-grab active:cursor-grabbing"
       >
         <span id={titleId}>{title}</span>
         <button
